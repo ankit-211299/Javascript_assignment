@@ -1,0 +1,14 @@
+{
+  "name": "assign1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "concat_string.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
