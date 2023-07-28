@@ -1,0 +1,45 @@
+If we execute this Javascript, what will the browser's console show?
+
+	var text = 'outside';
+
+    function logIt(){
+        console.log(text);
+        var text = 'inside';
+    };
+logIt();
+
+
+>>>> undifined
+
+Find the Output
+ var x = 100;
+    console.log(x);
+     
+    function test(){
+        var x = 250;
+        console.log(x);
+     
+        if (x > 100) {
+            let x = 350;
+            console.log(x);
+        }
+     
+        console.log(x);
+    }
+     
+    test();
+    console.log(x);
+
+
+>>>>>> 100, 250, 350, 250, 100
+
+What is the difference of output between these two expressions? Give your reasons for it:
+12 == “12”
+12 === “12”
+Number(12) === 12
+
+>>>> true, false, unndifined
+
+
+What is NaN?
+>>>> Not a number, happens when number is required but rather a string is given.
