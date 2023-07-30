@@ -15,3 +15,27 @@ function result(num1,num2,opp){
     }
 }
 
+function isEven(num){
+    if(num%2 === 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+function calculator(num1, num2, opp){
+
+    if(isEven(num1) === true && isEven(num2) === true){
+        result(num1,num2,opp);
+    }
+    else{
+        console.log("Numbers provided is/are not even");
+    }
+}
+
+let num1 = parseInt(prompt("Enter number 1 = "));
+let num2 = parseInt(prompt("Enter number 2 = "));
+let opp = parseInt(prompt("Enter the operator (1-4) - "));
+
+calculator(num1,num2,opp);
