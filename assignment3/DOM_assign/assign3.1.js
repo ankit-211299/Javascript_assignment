@@ -28,6 +28,7 @@ const removeItem = () => {
     }
     else{
         console.log("Empty List");
+        alert("Empty List !!")
     }
 };
 

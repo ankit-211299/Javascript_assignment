@@ -1,6 +1,9 @@
 // Write a JavaScript program that calculates the area of a rectangle when
 // the user inputs the width and height into two input fields and clicks a
 // button.
+// Write a JavaScript program that displays an alert message to the user
+// when they submit a form.
+
 
 const onSubmit = () => {
 
@@ -12,10 +15,12 @@ const onSubmit = () => {
     const result = document.getElementById("res");
 
     (function (num1,num2) {
-        const sum = num1+num2;
-        console.log(sum);
-        result.innerHTML = "Results ="+" "+sum;
+        const area = num1*num2;
+        console.log(area);
+        result.innerHTML = "Results ="+" "+area;
     })(lenVal,breVal);
+
+    alert("Data Submited !!");
 };
 
 const submitButton = document.getElementById("sub");
