@@ -120,3 +120,12 @@ printMul(2, 4, mul);
 // SetTimeout
 // Classes and Methods
 // Array methods -> map, reduce, slice, filter
+
+// Array Methods: map, reduce, slice, filter
+
+var arr = [1, 2, 3, 4];
+delete arr[0];
+console.log(arr);
+arr[0] = 1;
+console.log(arr);
+console.log(arr.keys());
