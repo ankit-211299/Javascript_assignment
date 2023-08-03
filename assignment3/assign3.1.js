@@ -6,6 +6,10 @@ let word = sen.split(" ");
 
 console.log(word);
 
-for(var n of word){
-    console.log(n[0]);
-}
+// for(var n of word){
+//     console.log(n[0]);
+// }
+
+word.forEach((names) => {
+    console.log(names[0]);
+});
