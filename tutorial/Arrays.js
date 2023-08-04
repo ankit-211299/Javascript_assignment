@@ -11,3 +11,6 @@ console.log(arr2);
 // reduce
 const arr3 = arr.reduce((total, value) => total + value, 0);
 console.log(arr3);
+
+// spread
+//arr[..., 1,3,5];
