@@ -119,8 +119,7 @@ printMul(2, 4, mul);
 // Closure Overloading
 // SetTimeout
 // Classes and Methods
-// Array methods -> map, reduce, slice, filter
-
+// Spread Operators
 // Array Methods: map, reduce, slice, filter
 
 var arr = [1, 2, 3, 4];
