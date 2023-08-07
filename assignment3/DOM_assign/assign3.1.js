@@ -1,12 +1,40 @@
-let c = 4;
+// Write a JavaScript program that adds a new item to the list whenever
+// a user inputs a text into the input field and clicks the button.
 
-let ul = document.querySelectorAll("#un_l");
-// console.log(ul[0]);
 
-let li_cont = document.createElement("li");
+let c = 3;
 
-let txt = document.createTextNode("Item 3");
+const addItem = () => {
+    console.log("add button clicked");
 
-let cont = li_cont.appendChild(txt);
+    const ul = document.getElementById("un_l");
+    const list = document.createElement("li");
 
-ul.appendChild(cont);
+    list.innerHTML = "Item"+" "+(++c);
+
+    ul.appendChild(list);
+}
+
+const removeItem = () => {
+    console.log("remove button clicked");
+
+    const ul_li = document.getElementById("un_l");
+    const list = ul_li.children[c-1];
+    
+    if(list){
+
+        ul_li.removeChild(list);
+        c=c-1;
+    }
+    else{
+        console.log("Empty List");
+        alert("Empty List !!")
+    }
+};
+
+
+const addButton = document.getElementById("add");
+addButton.addEventListener("click",addItem);
+
+const removeButton = document.getElementById("rem");
+removeButton.addEventListener("click",removeItem);

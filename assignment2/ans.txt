@@ -9,7 +9,7 @@ If we execute this Javascript, what will the browser's console show?
 logIt();
 
 
->>>> undifined
+>>>> undifined bcz var text is reinitialised in the function scope and due to hoisting the content of the variable shows undifined.
 
 Find the Output
  var x = 100;
@@ -31,14 +31,14 @@ Find the Output
     console.log(x);
 
 
->>>>>> 100, 250, 350, 250, 100
+>>>>>> 100, 250, 350, 250, 100 
 
 What is the difference of output between these two expressions? Give your reasons for it:
-12 == “12”
-12 === “12”
-Number(12) === 12
 
->>>> true, false, unndifined
+12 == “12”  >>>>true, as the == indicates the value is only being compared
+12 === “12” >>>> false, as the === indicates the value and the data type is also being compared
+Number(12) === 12 >>>> undefined, as the Number(12) indicates object is being made
+
 
 
 What is NaN?
