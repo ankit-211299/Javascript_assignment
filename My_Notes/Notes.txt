@@ -1,0 +1,34 @@
+How JS works?
+> Everything in JS happens inside an Execution Context
+JS is a synchronous single threaded language
+
+Execution Context contains (Memory Component, Code Component) :
+1. Variable Environment - contains every variable and functions in key value pair
+2. Thread of Execution - contains the main code.
+
+when the code is started to run, a global execution context is craeted and 
+2 phases are created along with it.
+1st phase is Memory Component
+2nd phase is Code Component
+
+In Memory creation phase JS allocates the memories to all the variable and functions 
+the variables are initialised as undifined in this phase and the whole code inside the functions gets copied
+
+IN 2nd Phase or Execution Phase the JS code is executed line by line sychronusly
+
+JS has it's own call stack - It is a stack and in the bottom of the stack there is a global execution context.
+when ever the new funtion is being created the element is pushed into the stack.
+and the stack is emptied out or poped out whaen the elements in the stack are executed.
+
+Call stack maintains the order of the execution of the execution contexts.
+
+Call stack is also known as:
+0. Call stack
+1. Execution Context stack
+2. Program stack
+3. Control stack
+4. Runtime stack
+5. Machine stack
+
+Hoisting is a feature in a Javascript which enables us to access the variables or functions 
+even before initialising it.
