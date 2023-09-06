@@ -1,0 +1,12 @@
+var
+let
+const
+
+primitive datatypes - 7 types (nn bb ss u)
+1.Null
+2.NUmber
+3.Boolean
+4.BigInt
+5.String
+6.symbol
+7.undefined
