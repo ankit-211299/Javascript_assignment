@@ -113,5 +113,4 @@ arr.forEach((ele) => {
 if (output.size === 0) 
     console.log("Not present");
 else
-    console.log (Array.from(output)[0])
-
+    console.log (Array.from(output)[0]);
