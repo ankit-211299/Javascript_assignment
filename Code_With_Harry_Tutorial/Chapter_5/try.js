@@ -1,3 +1,9 @@
-let a = [1,2,3,4,5,6,7,8,9,10];
+let a = [1,2,3,];
 
-console.log(a.includes(12));
+// console.log(a.includes(12));
+
+
+var obj = [{"a1":12}];
+
+console.log(obj.join);
+
