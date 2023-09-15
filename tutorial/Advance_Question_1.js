@@ -14,6 +14,6 @@ let isPalindrome = (str) => {
         return false;
 };
 
-console.log(isPalindrome("d.a D "));
+console.log(isPalindrome("A man, a plan, a canal, Panama."));
 
 //
