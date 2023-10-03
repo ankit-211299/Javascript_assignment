@@ -1,3 +1,15 @@
 Simplifies the JS programing by reducing the lines of code. Basically makes it easier.
 
 Makes the code compact.
+
+Syntax : $('selector').action()
+
+Sometimes webpage does'nt load up but the JS code is executed. To solve
+this issue :-
+
+$(document).ready(function(){
+    //Enter your jQuery code here
+});
+
+The above code snippet confirms the page is loaded fully then the
+JS code is executed.
