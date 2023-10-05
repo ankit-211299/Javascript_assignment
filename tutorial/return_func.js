@@ -7,4 +7,4 @@ let sum_func = (a,b) => {
     }
 }
 sum = sum_func(a,b);
-sum();
+sum(); 
