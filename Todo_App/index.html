@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo Application</title>
     <script defer src="script.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
     <h1>TODO</h1>
-    <label for="input_content">Enter your content:</label>
-    <input type="text" id="input_content" name="input_content" required>
-    <button id="submit">+</button>
+    <form>
+      <label for="input_content">Enter your content:</label>
+      <input type="text" id="input_content" name="input_content" required />
+      <button id="submit">+</button>
+    </form>
 
     <div id="unlist">
-        <ol id="orderedList">
-            <!-- <li id="list">
-                <span id="content"></span>
-                <button id="rem_but">-</button>
-            </li> -->
-        </ol>
+      <ol id="orderedList"></ol>
     </div>
-</body>
+  </body>
 </html>
