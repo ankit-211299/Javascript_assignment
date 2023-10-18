@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h3>
+      Create a JavaScript program to manage a grade book for a class of
+      students. Your program should allow a teacher to:<br />
+      1.Add new students to the class.<br />
+      2.Enter the exam scores for each student.<br />
+      3.Calculate the average score for the class.<br />
+      4.Calculate the highest and lowest scores. <br />
+      5.Calculate and display the grade for each student based on the grading
+      criteria from the previous assignment.
+    </h3>
+
+    <form>
+        <label for="studentInput">Student Name:</label>
+        <input type="text" id="studentInput" name="studentInput">
+        <br>
+        <label for="numInput">Student's Marks:</label>
+        <input type="number" id="numInput" name="numInput">
+        <br>
+        <button type="submit" id="sbut">Submit</button>
+    </form>
+
+    <div id="average"></div>
+    <div id="highest"></div>
+    <div id="lowest"></div>
+  </body>
+</html>
