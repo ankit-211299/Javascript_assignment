@@ -1,15 +1,17 @@
 .img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-
+    margin: 50px;
     width: 300px;
 
     display: block;
+    transition: transform 0.1s;
+}
+
+.img:hover{
+    transform: scale(110%);
+    box-shadow: 10px 10px 10px rgb(187, 186, 186);
+}
+
+.img:active{
+    box-shadow: none;
+    transform: scale(100%);
 }
