@@ -1,16 +1,19 @@
-const imgContainerElement = document.getElementById("imgContainer");
+const imgElements = document.querySelectorAll(".img");
 const fullScaleImage = document.getElementById("fullScaleImage");
 const fullScaleImageContainer = document.getElementById("fullScaleImageContainer");
-const imgElements = document.querySelectorAll(".img");
+const closeContainer = document.getElementById("closeContainer");
+const closeButton = document.getElementById("close");
 
-imgElements.forEach((imgElement) => {
+imgElements.forEach((imgElement)=>{
     imgElement.addEventListener("click",function(event){
-        const imgSrc = event.target.src;
-        fullScaleImage.src = imgSrc;
+        const imgSource = imgElement.getAttribute("src");
+        fullScaleImage.src = imgSource;
+        closeContainer.style.display = "flex";
         fullScaleImageContainer.style.display = "flex";
     });
 });
 
-fullScaleImageContainer.addEventListener("click",function(event){
+closeButton.addEventListener("click",function(event){
+    closeContainer.style.display = "none";
     fullScaleImageContainer.style.display = "none";
-});
+})
