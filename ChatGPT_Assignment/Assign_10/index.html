@@ -1,29 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ChatGPT Assignment 10</title>
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h3>
-      Design an image gallery with a series of thumbnail images. When a user
-      clicks on a thumbnail, use JavaScript to display the full-sized image in a
-      modal or lightbox. Add previous and next buttons to navigate between
-      images.
-    </h3>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatGPT Asssignment 11</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>GALLERIA</h2>
+  <div id="imgContainer">
+    <img class="img" src="Media/download1.jpeg" alt="image_1">
+    <img class="img" src="Media/download2.jpeg" alt="image_1">
+    <img class="img" src="Media/download3.jpeg" alt="image_1">
+    <img class="img" src="Media/images.jpeg" alt="image_1">
+  </div>
 
-    <div id="img-cont">
-        <img class="img" src="Media/download3.jpeg">
-        <img class="img" src="Media/images.jpeg">
-        <img class="img" src="Media/download2.jpeg">
-        <img class="img" src="Media/download1.jpeg">
-    </div>
-    
-    <div id="fullSizeImageContainer">
-      <img id="fullSizeImage" src="" alt="Full-sized Image">
-    </div>
-  </body>
+  <div id="fullScaleImageContainer">
+    <img id="fullScaleImage" src="" alt="full-scale-image">
+    <img id="close" src="Media/png-transparent-computer-icons-close-button-trademark-logo-sign-thumbnail.png" alt="close-button">
+  </div>
+</body>
 </html>
