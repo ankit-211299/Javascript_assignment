@@ -10,10 +10,12 @@ imgElements.forEach((imgElement)=>{
         fullScaleImage.src = imgSource;
         closeContainer.style.display = "flex";
         fullScaleImageContainer.style.display = "flex";
+        document.body.style.overflow = "hidden";
     });
 });
 
 closeButton.addEventListener("click",function(event){
     closeContainer.style.display = "none";
     fullScaleImageContainer.style.display = "none";
-})
+    document.body.style.overflow = "auto";
+});
