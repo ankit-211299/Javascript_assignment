@@ -32,3 +32,19 @@ function editTable(name,age){
 
     tableElement.appendChild(trElement);
 }
+
+//Selection Code
+const selectAllElement = document.getElementById("selectAll");
+const checkBoxElements = document.querySelectorAll(".check_box");
+
+selectAllElement.addEventListener("change",function(event){
+    if(selectAllElement.checked === true){
+        checkBoxElements.forEach((checkBoxElement)=>{
+            checkBoxElement.checked = true;
+        });
+    }else{
+        checkBoxElements.forEach((checkBoxElement)=>{
+            checkBoxElement.checked = false;
+        });
+    }
+});
