@@ -6,10 +6,12 @@ sbut.addEventListener("click",function(event){
     event.preventDefault();
     const s = str.value;
     solutionString(s);
+
+    str.value = "";
 });
 
 function solutionString(s){
     const sArray = s.split(" ");
-    // console.log(sArray);
-    
+    let res = sArray.filter((value) => value.includes("X"));
+    console.log(res);
 }
